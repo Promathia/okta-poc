@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <title>IT academy</title>
+  
+  <script type="module" crossorigin src="/assets/index-d29a5ac9.js"></script>
+  <link rel="stylesheet" href="/assets/index-a66dbd70.css">
+</head>
+
+<body>
+<div class='user-info'>Not logged in</div>
+<button data-micromodal-trigger="modal-1">Login</button>
+<button class='login-redirect-button'>login with redirect</button>
+<button class='login-embed-button'>login with embed widget</button>
+<button class='logout-button'>Logout</button>
+<h1>Home page</h1>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+      <tab-container>
+        <div role="tablist">
+          <button type="button" id="tab-one" role="tab" aria-selected="true">Login</button>
+          <button type="button" id="tab-two" role="tab" tabindex="-1">Create account</button>
+        </div>
+        <div role="tabpanel" aria-labelledby="tab-one">
+          <form class='login-form form'>
+            <label class='form__input'>
+              User name
+              <input type='text' name='username'>
+            </label>
+            <label class='form__input'>
+              Password
+              <input type='password' name='password'>
+            </label>
+            <button class='submit' name="submit">Login</button>
+          </form>
+        </div>
+        <div role="tabpanel" aria-labelledby="tab-two" hidden>
+          <form class='form registration-form'>
+            <label class='form__input'>
+              Email
+              <input type='text' name='email' value='test1@test.com'>
+            </label>
+            <label class='form__input'>
+              First name
+              <input type='text' name='firstName' value='FNTest1'>
+            </label>
+            <label class='form__input'>
+              Last name
+              <input type='text' name='lastName' value='LNTest1'>
+            </label>
+            <label class='form__input'>
+              Password
+              <input type='password' name='password' value='~Qwerty123'>
+            </label>
+            <button class='submit' name="submit">Register</button>
+          </form>
+        </div>
+      </tab-container>
+      </main>
+    </div>
+  </div>
+</div>
+<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+      <div id='osi-container'></div>
+      
+      </main>
+    </div>
+  </div>
+</div>
+</body>
+</html>
